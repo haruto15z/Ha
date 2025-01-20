@@ -11,7 +11,10 @@
 
   <div class="container">
   <h2>バイクは全身で風を感じられる！</h2>
-  <img src="/img/bike1.jpg" alt="バイクの画像">
+  <img src="/img/bike1.jpg" class="img-fluid" alt="バイクの画像">
+  </div>
+
+  <div class="container">
   <p>バイクの最大の魅力は<mark>風を切って全身でダイレクトに自然を感じられる乗り物</mark>だと思います。
   <br>例えば、同じ道を同じ条件で車とバイクで走らせても、その刺激には天と地ほどの差があると思います。</p>
   <p>バイクには、車のようにエアコンなどの快適なものはなく、雨が降れば当然ずぶ濡れ...なんてこともざらにあります。<br>
@@ -42,13 +45,33 @@
     <P>未舗装道路である林道などを走行できる能力を持った<b>オフロードタイプ</b></P>
     <p>ほかにもさまざまな種類のバイクがあります</p>
     <p>さらに排気量でも区別されており細かく分類されている</p>
-    <p><strong>～50cc</strong>原動機付自転車</p>
-    <P><strong>51～400cc</strong>小型自動二輪車・普通自動二輪車</P>
-    <P><strong>401cc～</strong>大型自動二輪車</P>
+
+    
+  <table>
+    <thead>
+      <tr>
+        <th>排気量</th>
+        <th>分類</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>～50cc</strong></td>
+        <td>原動機付自転車</td>
+      </tr>
+      <tr>
+        <td><strong>51～400cc</strong></td>
+        <td>小型自動二輪車・普通自動二輪車</td>
+      </tr>
+      <tr>
+        <td><strong>401cc～</strong></td>
+        <td>大型自動二輪車</td>
+      </tr>
+    </tbody>
+  </table>
     <p>このように日本では細かく排気量ごとに分類されており、免許も違う！！</p>
     <P>排気量の違いで大きいほうが偉いとか小さいバイクでは物足りない、なんてことは決してないので自分が乗りたいと思ったバイクに乗るのが一番いいとぼくは思う。</P>
     <p>多種多様なバイクがある中で、自分に合ったバイクを探すのも楽しみの一つではないだろうか。</p>
-
   </div>
 
   <div class="container">
@@ -58,9 +81,15 @@
     <p>現に私もバイク乗りが集まる場所で仲良くなった人たちとツーリングしたりしている(笑)</p>
     <P>バイクは今までの人生や価値観を変えてくれる力を私は、持っていると思います。</P>
     <p>これからバイクに乗り始める方や、すでにバイクに乗っている方も、安全に、楽しいバイクライフを送って楽しんでくださいね</p>
-  
   </div>
+
 </template>
+
+<script>
+export default {
+  name: 'ExampleBike5'
+};
+</script>
 
 <style>
 
@@ -77,10 +106,10 @@ h2 {
   border-bottom: solid 3px #364e96;/*下線*/
 }
 
-.image_size_m{
+.image-size {
 	width: 50px;
-	height: 50px;
-
+	height: auto;
+}
 
 /* バイクの選択肢の上下の線の部分 */
 b {
@@ -93,5 +122,25 @@ b {
 /*素人でもカスタムの部分*/
 .under{
   background: linear-gradient(transparent 50%, #ff0 50%);/*下線と透き通った黄色*/
+}
+
+/*表のCSSの部分*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+table, th, td {
+  border: 1px solid black;
+}
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+th {
+  background-color: #f2f2f2;
+}
+strong {
+  font-weight: bold;
 }
 </style>
