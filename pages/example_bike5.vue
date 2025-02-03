@@ -56,11 +56,11 @@
     </thead>
     <tbody>
       <tr>
-        <td><strong>～50cc</strong></td>
+        <td><a href="https://ha-trnb--49588--d20a0a75.local-credentialless.webcontainer.io/example_bike6" target="_blank" style="color: black;"><strong>～50cc</strong></a></td>
         <td>原動機付自転車</td>
       </tr>
       <tr>
-        <td><strong>51～400cc</strong></td>
+        <td><a href="https://ha-trnb--49588--d20a0a75.local-credentialless.webcontainer.io/example_bike7" target="_blank" style="color: black"><strong>51～400cc</strong></a></td>
         <td>小型自動二輪車・普通自動二輪車</td>
       </tr>
       <tr>
