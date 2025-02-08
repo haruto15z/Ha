@@ -1,12 +1,13 @@
 
 <template>
+
   <div class="container">
 
-  <h1 style="text-align: center"><strong><nobr>あなたを虜にするバイクの魅力</nobr></strong></h1>
+    <h1 class="powerful-heading"><strong><nobr>あなたを虜にするバイクの魅力</nobr></strong></h1>
+
     <p><strong><mark>なぜバイクに乗るのか？</mark></strong></p>
     <p>バイクに乗る人たちに「なぜバイクに乗るの？」と質問をなげかければ、大半のバイク乗りの方が「楽しいから」「バイクが好きだから」と答えると思います。<br>
     そこで、バイクのいったい何が楽しいのか見ていきましょう！！</p>
-    
   </div>
 
   <div class="container">
@@ -38,6 +39,7 @@
   </div>
 
   <div class="container">
+  
     <h2>バイクの選択肢が多い</h2>
     <p>皆さんも知っている通り、バイクには様々な種類の車種があります。</p>
     <P>カウルなど外装パーツがついていないエンジンとフレームがむき出しの<b>ネイキッドバイク</b></P>
@@ -56,15 +58,15 @@
     </thead>
     <tbody>
       <tr>
-        <td><a href="https://ha-trnb--49588--d20a0a75.local-credentialless.webcontainer.io/example_bike6" target="_blank" style="color: black;"><strong>～50cc</strong></a></td>
+        <td><a href="https://ha-trnb--59014--d20a0a75.local-credentialless.webcontainer.io/example_bike6" target="_blank" style="color: black;"><strong>～50cc</strong></a></td>
         <td>原動機付自転車</td>
       </tr>
       <tr>
-        <td><a href="https://ha-trnb--49588--d20a0a75.local-credentialless.webcontainer.io/example_bike7" target="_blank" style="color: black"><strong>51～400cc</strong></a></td>
+        <td><a href="https://ha-trnb--59014--d20a0a75.local-credentialless.webcontainer.io/example_bike7" target="_blank" style="color: black"><strong>51～400cc</strong></a></td>
         <td>小型自動二輪車・普通自動二輪車</td>
       </tr>
       <tr>
-        <td><strong>401cc～</strong></td>
+        <td><a href="https://ha-trnb--59014--d20a0a75.local-credentialless.webcontainer.io/example_bike8" target="_blank" style="color: black"><strong>401cc～</strong></a></td>
         <td>大型自動二輪車</td>
       </tr>
     </tbody>
@@ -84,7 +86,13 @@
     <p>これからバイクに乗り始める方や、すでにバイクに乗っている方も、安全に、楽しいバイクライフを送って楽しんでくださいね</p>
   </div>
 
+  <div class="container">
+    <a href="https://ha-trnb--59014--d20a0a75.local-credentialless.webcontainer.io/example_bike8" target="_blank" style="color: black"><p>私が乗っているバイクが気になる方!!ここから</p></a>
+  </div>
+
+
 </template>
+
 
 <script>
 export default {
@@ -95,9 +103,18 @@ export default {
 <style>
 
 /*見出し1の装飾*/
-h1 {
-  font-size: 40px
-}
+.powerful-heading {
+    text-align: center;
+    font-weight: bold; /* 太字 */
+    color: #000000; /* 黒色 */
+    letter-spacing: 2px; /* 文字間隔を広げる */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* 文字に影を追加 */
+    transition: transform 0.3s ease; /* アニメーション効果 */
+  }
+
+  .powerful-heading:hover {
+    transform: scale(1.1); /* ホバー時に少し大きくなる */
+  }
 
 /*見出し2の装飾*/
 h2 {
@@ -144,4 +161,71 @@ th {
 strong {
   font-weight: bold;
 }
+
+
+/* 基本のレイアウト */
+.container {
+  margin-bottom: 20px;
+}
+
+/* 画像がサイズに応じて縮小するように */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 基本のレイアウト */
+.container {
+  margin-bottom: 20px;
+}
+
+/* 画像がサイズに応じて縮小するように */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+/* テキストの基本スタイル */
+h1, h2 {
+  color: #333;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* スマホやタブレット向けのレスポンシブデザイン */
+@media (max-width: 768px) {
+  h1, h2 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  .container {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1, h2 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+
+  .container {
+    padding: 5px;
+  }
+}
+
+
 </style>
