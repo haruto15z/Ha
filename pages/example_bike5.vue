@@ -12,7 +12,7 @@
 
   <div class="container">
   <h2>バイクは全身で風を感じられる！</h2>
-  <img src="/img/bike1.jpg" class="img-fluid" alt="バイクの画像">
+  <img src="/img/bike1.jpg" class="img-fluid hover-effect" alt="バイクの画像">
   </div>
 
   <div class="container">
@@ -58,15 +58,15 @@
     </thead>
     <tbody>
       <tr>
-        <td><a href="https://ha-trnb--59014--d20a0a75.local-credentialless.webcontainer.io/example_bike6" target="_blank" style="color: black;"><strong>～50cc</strong></a></td>
+        <td><a href="https://ha-trnb--54095--d20a0a75.local-credentialless.webcontainer.io/example_bike6" target="_blank" style="color: black;"><strong>～50cc</strong></a></td>
         <td>原動機付自転車</td>
       </tr>
       <tr>
-        <td><a href="https://ha-trnb--59014--d20a0a75.local-credentialless.webcontainer.io/example_bike7" target="_blank" style="color: black"><strong>51～400cc</strong></a></td>
+        <td><a href="https://ha-trnb--54095--d20a0a75.local-credentialless.webcontainer.io/example_bike7" target="_blank" style="color: black"><strong>51～400cc</strong></a></td>
         <td>小型自動二輪車・普通自動二輪車</td>
       </tr>
       <tr>
-        <td><a href="https://ha-trnb--59014--d20a0a75.local-credentialless.webcontainer.io/example_bike8" target="_blank" style="color: black"><strong>401cc～</strong></a></td>
+        <td><a href="https://ha-trnb--54095--d20a0a75.local-credentialless.webcontainer.io/example_bike8" target="_blank" style="color: black"><strong>401cc～</strong></a></td>
         <td>大型自動二輪車</td>
       </tr>
     </tbody>
@@ -78,7 +78,7 @@
 
   <div class="container">
     <h2>バイク乗りや、バイク好きと繋がれる</h2>
-    <img src="/img/bike2.jpg" class="img-fluid" alt="バイクの画像">
+    <img src="/img/bike2.jpg" class="img-fluid hover-effect" alt="バイクの画像">
     <p>バイク乗りになると、バイクに乗りの集まるミーティングやSNSを始めてみたりと、様々な手段でバイク乗りとつながることができる。</p>
     <p>趣味が同じだったり、出会った人と仲良くなって一緒にツーリングに行ったりするのも楽しいと思う!!</p>
     <p>現に私もバイク乗りが集まる場所で仲良くなった人たちとツーリングしたりしている(笑)</p>
@@ -225,6 +225,16 @@ p {
   .container {
     padding: 5px;
   }
+}
+
+/*画像にエフェクトを追加*/
+.hover-effect {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-effect:hover {
+  transform: scale(1.1); /* 画像が拡大 */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* 影を追加 */
 }
 
 
